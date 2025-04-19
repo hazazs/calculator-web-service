@@ -1,0 +1,50 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://hazazs.hu/calculator-web-service"
+           targetNamespace="http://hazazs.hu/calculator-web-service"
+           elementFormDefault="qualified">
+
+    <xs:element name="getAdditionRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="leftOperand" type="xs:double"/>
+                <xs:element name="rightOperand" type="xs:double"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="getSubtractionRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="leftOperand" type="xs:double"/>
+                <xs:element name="rightOperand" type="xs:double"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="getMultiplicationRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="leftOperand" type="xs:double"/>
+                <xs:element name="rightOperand" type="xs:double"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="getDivisionRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="leftOperand" type="xs:double"/>
+                <xs:element name="rightOperand" type="xs:double"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="getResultResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="result" type="xs:double"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>
